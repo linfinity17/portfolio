@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"backg",
+				"background-color\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
 				"transi",
 				"transition-duration\tproperty"
 			],
@@ -52,16 +80,8 @@
 				"scrollY"
 			],
 			[
-				"back",
-				"background-color\tproperty"
-			],
-			[
 				"mar",
 				"margin-left\tproperty"
-			],
-			[
-				"alig",
-				"align-items\tproperty"
 			],
 			[
 				"clas",
@@ -146,10 +166,6 @@
 			[
 				"transition",
 				"transition-duration\tproperty"
-			],
-			[
-				"ali",
-				"align-content\tproperty"
 			],
 			[
 				"inl",
@@ -250,10 +266,6 @@
 			[
 				"star",
 				"start_time"
-			],
-			[
-				"padd",
-				"padding-left\tproperty"
 			],
 			[
 				"font",
@@ -376,10 +388,21 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/205296/Desktop/newsite/my-portfolio"
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/css",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/images"
 	],
 	"file_history":
 	[
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Content.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Projects.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Banner.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Header.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/css/index.css",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/App.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Scripts.js",
 		"/C/Users/205296/Desktop/mysitev2/package.json",
 		"/C/Users/205296/Desktop/newsite/my-portfolio/src/components/App.js",
 		"/C/Users/205296/Desktop/newsite/my-portfolio/src/css/index.css",
@@ -500,24 +523,18 @@
 		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/urls.py",
 		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_record/urls.py",
 		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/forms.py",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/templates/time_keeper/base.html",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/views.py",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_record/views.py",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_record/forms.py",
-		"/C/Users/Leandro Inumerable/Desktop/Python/learning_site/learning_site/views.py",
-		"/C/Users/Leandro Inumerable/Desktop/Python/learning_site/stock_data/views.py",
-		"/C/Users/Leandro Inumerable/Desktop/Python/learning_site/stock_data/forms.py",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_record/settings.py"
+		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/templates/time_keeper/base.html"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
 		"height": 107.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -525,6 +542,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"web",
+			".header",
+			".isact",
+			"aboutme",
+			"contact",
+			".isac",
+			".banner",
+			".name-",
+			".banner",
+			".back",
+			"backgr",
+			".BACK",
+			"backg"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -549,7 +579,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -586,7 +616,7 @@
 	"project": "my-portfolio.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":

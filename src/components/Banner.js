@@ -81,7 +81,7 @@ class Banner extends React.Component {
   	<div className="banner">
 	  	<div className="name-plate">
 	  	<FadeIn delay={500} transitionDuration={1000} >
-  		  <p className="banner-id-name"> LEANDRO INUMERABLE, CFA</p>
+  		  <div className="banner-id-name"> <span>LEANDRO</span> <span>INUMERABLE, CFA</span></div>
   		  </FadeIn>
 	  		<p className="banner-id-text"></p>
 	  	</div>

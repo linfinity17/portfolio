@@ -23,8 +23,8 @@ class App extends React.Component {
       banner: 0,
       projects: 0,
       resume: 0,
-      contact: 0,
-      aboutMe: 0
+      aboutMe: 0,
+      contact: 0
     },
     isNavOpen: false
   };
@@ -47,7 +47,7 @@ class App extends React.Component {
   checkURLName = () => {
     let positions = this.state.heights;
       let posY = this.state.posY;
-      let sectionArray = ['head','banner','projects','resume','contact','aboutMe'];
+      let sectionArray = ['head','banner','projects','resume','aboutMe','contact'];
 
       sectionArray.forEach((item) => {
         if (positions[item] > posY && posY > (positions[item] - 200)) {
@@ -68,7 +68,7 @@ class App extends React.Component {
 
   checkHeights = (e) => {
 
-    let sectionArray = ['head','banner','projects','resume','contact','aboutMe'];
+    let sectionArray = ['head','banner','projects','resume','aboutMe','contact'];
     let sectionPositions = {heights:{}};
     let cumulativeHeight = 0;
     let space = document.querySelector('.space').getBoundingClientRect().height;
@@ -108,7 +108,7 @@ class App extends React.Component {
     window.addEventListener('scroll', this.checkURLName);
     window.addEventListener('resize', this.checkHeights);
 
-    let buttonHeaderArray = ['banner','projects','resume','contact','aboutMe'];
+    let buttonHeaderArray = ['banner','projects','resume','aboutMe','contact'];
 
     buttonHeaderArray.forEach((item) => {
       document.querySelector("#" + item).addEventListener('click',this.changeRoute);
@@ -150,16 +150,16 @@ class App extends React.Component {
                 checkHeights = {this.checkHeights} /> 
               } 
           />
-          <Route path="/contact" 
+          <Route path="/aboutMe" 
           render = { () => 
-            <Scripts url="contact" 
+            <Scripts url="aboutMe" 
                 checkScrollPosition={this.checkScrollPosition} 
                 checkHeights = {this.checkHeights} /> 
               } 
           />
-          <Route path="/aboutMe" 
+          <Route path="/contact" 
           render = { () => 
-            <Scripts url="aboutMe" 
+            <Scripts url="contact" 
                 checkScrollPosition={this.checkScrollPosition} 
                 checkHeights = {this.checkHeights} /> 
               } 

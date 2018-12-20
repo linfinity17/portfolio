@@ -3,7 +3,6 @@ import React from 'react';
 class Scripts extends React.Component {
 
 	componentDidMount() {
-		console.log('here');
 		let heights = this.props.checkHeights();
         let initialY = heights.heights[this.props.url] - heights.heights.banner;
 	    window.scrollTo({
