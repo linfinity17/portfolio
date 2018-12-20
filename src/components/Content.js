@@ -15,9 +15,9 @@ class Content extends React.Component {
 			<div className='space'></div>
 			<Resume />
 			<div className='space'></div>
-			<Contact />
-			<div className='space'></div>
 			<AboutMe />
+			<div className='space'></div>
+			<Contact />
 		</div>
 		);
 	}
