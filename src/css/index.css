@@ -52,7 +52,7 @@ p{
 }
 
 img{
-  margin:10px;
+  margin:15px 40px;
 }
 
 /* ===================================== 
@@ -327,6 +327,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 1.5em;
 }
 
 

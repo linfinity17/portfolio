@@ -12,7 +12,10 @@ const Projects = (props) => (
 <div className='projects'>
 	<div className='introduction'> 
 		<div className='intro-background'> </div> 
-		<h1 className='languages-list'>
+		<h1 className='works-title'>
+		Introduction
+		</h1>
+		<h2 className='languages-list'>
 			<LanguageCard name="python" languageImage={pythonLogo} />
 			<img src={divider} height="20px" alt="divider image" />
 			<LanguageCard name="django" languageImage={djangoLogo} />
@@ -20,7 +23,7 @@ const Projects = (props) => (
 			<LanguageCard name="javascript" languageImage={javascriptLogo} />
 			<img src={divider} height="20px" alt="divider image" />
 			<LanguageCard name="reactJS" languageImage={reactLogo} />
-		</h1>
+		</h2>
 		<div className='text-paragraphs'>
 			<p>I am a financial analyst, a web developer, and a project manager. I can think strategically, while at the same time, implement complicated technical requirements. My diverse skill set allows me to bridge the gap between business requirements and technological solutions.   </p>
 			<p>Feel free to browse this site to know more about my projects, works, and passions. </p>
