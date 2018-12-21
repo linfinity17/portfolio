@@ -19,17 +19,21 @@ const Resume = (props) => (
 		/>
 		<ResumeSection 
 			icon={government} 
+			description="Department of Finance, Republic of the Philippines" 
 		/>
 		<div className="year-block"> 2015 </div>
 		<ResumeSection 
 			icon={market} 
+			description="Securities and Exchange Commission, Republic of the Philippines" 
 		/>
 		<div className="year-block"> 2016 </div>
 		<ResumeSection 
 			icon={finance} 
+			description="Earned my CFA Charter" 
 		/>
 		<ResumeSection 
 			icon={banking} 
+			description="Security Bank Corporation" 
 		/>
 </div>
 );

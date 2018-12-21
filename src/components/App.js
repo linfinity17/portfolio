@@ -24,7 +24,8 @@ class App extends React.Component {
       projects: 0,
       resume: 0,
       aboutMe: 0,
-      contact: 0
+      contact: 0,
+      bottom: 0,
     },
     isNavOpen: false
   };
@@ -89,6 +90,7 @@ class App extends React.Component {
         cumulativeHeight += space;
       }
     });
+    sectionPositions.heights.bottom = cumulativeHeight - space;
 
     this.setState(sectionPositions);
     return sectionPositions;

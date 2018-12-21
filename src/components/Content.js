@@ -18,6 +18,7 @@ class Content extends React.Component {
 			<AboutMe />
 			<div className='space'></div>
 			<Contact />
+			<div className='footer'></div>
 		</div>
 		);
 	}

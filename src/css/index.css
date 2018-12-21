@@ -27,7 +27,7 @@ a {
   color: white;
 }
 hr {
-  margin: 60px 0 20px 0;
+  margin: 20px 0 20px 0;
   border: 0;
   clear:both;
   display:block;
@@ -42,6 +42,7 @@ h1 {
 }
 h3 {
   letter-spacing: 2px;
+  text-align: center;
 }
 
 p{
@@ -169,7 +170,7 @@ p{
 .background{
   z-index: -2;
   position: absolute;
-  background-image: url(../images/_1190570.jpg);
+  background-image: url(../images/background.jpg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
@@ -258,6 +259,15 @@ p{
   display: flex;
   flex-direction: column;
   max-width: 1200px;
+}
+
+.text-paragraphs a{
+  display: inline;
+  color: #00cdcd;
+}
+
+.contact .text-paragraphs p {
+  text-align: center;
 }
 
 .works{
@@ -363,10 +373,10 @@ p{
 
 .resume-section {
   position:relative;
-  height: 300px;
+  height: auto;
   width: 100%;
   display: grid;
-  grid-template-columns: 25% 75px 1fr;
+  grid-template-columns: 30% 75px 1fr;
   grid-template-rows: 100px 1fr;
   grid-gap: 0;
   grid-template-areas: 
@@ -409,9 +419,9 @@ p{
 
 .resume-description{
   grid-area: header;
-  height: calc(100% - 2em);
+  display: flex;
   align-self: center;
-  margin: 0 2em;
+  margin: 1em;
   background-color: #00cdcd;
   color: white;
   box-shadow: 6px 6px 5px #d4d4d4;
@@ -421,10 +431,10 @@ p{
 }
 
 .resume-content{
-  height: calc(100% - 2em);
   grid-area: main;
+  display: flex;
   align-self: center;
-  margin: 0 2em;
+  margin: 0 1em 1em 1em;
   background-color: white;
   color: #222;
   box-shadow: 6px 6px 5px #d4d4d4;
@@ -434,16 +444,21 @@ p{
 }
 
 .resume-skills{
-  height: calc(100% - 2em);
   grid-area: skills;
-  align-self: center;
-  margin: 0 2em;
+  display: flex;
+  margin: 1em;
   background-color: white;
   color: #222;
   box-shadow: 6px 6px 5px #d4d4d4;
   font-weight: bold;
   letter-spacing: 2px;
   padding: 0.5em 1em;
+}
+
+.resume-content p, .resume-skills p {
+  font-size:  20px;
+  font-weight:  normal; 
+  letter-spacing:   0px;
 }
 
 .profile-picture{
@@ -456,10 +471,67 @@ p{
 
 .head-shot{
   height: 30vw;
+  transform: translate(-20px,-20px);
 }
 
 
-@media (max-width: 768px) {
+.social-media {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-media-logo {
+  height: 75px;
+  margin: 1em auto;
+}
+
+.footer {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+}
+
+
+@media (max-width: 960px) {
+
+
+  .year-block{
+  margin: 1em auto 1em 0;
+  transform: translateX(0);
+  }
+
+  .resume, .resume-description, .resume-skills, .resume-content {
+    padding: 1em 0.5em;
+    margin: 0;
+  }
+
+  .resume-description {
+    margin-left: 0.5em;
+  }
+
+  .resume-skills {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    align-self: flex-start;
+  }
+
+
+  .resume-section {
+    width: 100%;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0;
+    grid-template-areas: 
+      "logo header"
+      "main main"
+      "skills skills"
+  }
+
 
   p{
     font-size: 18px;
@@ -475,19 +547,6 @@ p{
   }
 
  
- .background{
-  display: none;
- }
-  body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: -10;
-    background: url(../images/background2.jpg) no-repeat center;
-    background-size: cover;
-  }
 
 
   .head-nav {
@@ -530,6 +589,16 @@ p{
 
   .banner-id-text {
     font-size: 18px;
+  }
+
+  .profile-picture{
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+  }
+
+  .head-shot{
+    height: 53vw;
   }
 
 
