@@ -17,7 +17,7 @@ import Burger from './Burger';
 class App extends React.Component {
 
   state = {
-    posY: 0,
+    isAtTop: true,
     heights: {
       head: 0,
       banner: 0,
@@ -35,33 +35,40 @@ class App extends React.Component {
     });
   }
 
-  checkScrollPosition = () => {
-    let positions = this.state.heights;
-    let posY = this.state.posY;
-
-    this.setState({
-      posY: window.scrollY,
-    });  
-  };
-
   checkURLName = () => {
     let positions = this.state.heights;
-      let posY = this.state.posY;
+      let posY = window.scrollY;
       let sectionArray = ['head','banner','projects','resume','aboutMe','contact'];
+      let isAtTop = this.state.isAtTop;
+
+      if (posY == 0) {
+        this.setState({
+          isAtTop:true
+        });
+      }
+
+      if (posY != 0 && isAtTop) {
+        console.log('hello');
+        this.setState({
+          isAtTop:false
+        });
+      }
 
       sectionArray.forEach((item) => {
-        if (positions[item] > posY && posY > (positions[item] - 200)) {
+        if (positions[item] > posY && posY > (positions[item] - 200) && item != 'head') {
             document.querySelector('#'+item).parentElement.className = 'isActive';
             sectionArray.forEach((removeClassItem) => {
               if (!['head','banner',item].includes(removeClassItem)) {
                 document.querySelector('#'+removeClassItem).parentElement.className = '';
               }
             });
-          if (item =="banner") {
+          if (item =="banner" || item =="head") {
             document.querySelector('#'+item).parentElement.className = '';
             item = "";
           }
-          this.props.history.push('/' + item);
+          if (this.props.history.location.pathname != ('/' + item)) {
+            this.props.history.push('/' + item);
+          }
         }
       });
   };
@@ -99,12 +106,11 @@ class App extends React.Component {
       if (checkY === initialY) {
         window.scroll(0,this.state.heights[e.target.id] - this.state.heights.banner);
       }
-    }, 100);
+    }, 200);
     this.toggleNav();
   };
   
   componentDidMount() {
-    window.addEventListener('scroll', this.checkScrollPosition);
     window.addEventListener('scroll', this.checkURLName);
     window.addEventListener('resize', this.checkHeights);
 
@@ -125,42 +131,37 @@ class App extends React.Component {
           <div className="background"></div>
           <div className="background-overlay"></div>
         <FadeIn delay={500} transitionDuration={1000} >
-        <Header isAtTop = {!Boolean(this.state.posY)} isNavOpen={this.state.isNavOpen} />
+        <Header isAtTop = {this.state.isAtTop} isNavOpen={this.state.isNavOpen} />
         </FadeIn>
         <Content heights={this.state.heights} toggleNav={this.toggleNav} />
         <Switch>
           <Route exact path="/" 
           render = { () => 
             <Scripts url="banner" 
-                checkScrollPosition={this.checkScrollPosition} 
                 checkHeights = {this.checkHeights} /> 
               } 
           />
           <Route path="/projects" 
           render = { () => 
             <Scripts url="projects" 
-                checkScrollPosition={this.checkScrollPosition} 
                 checkHeights = {this.checkHeights} /> 
               } 
           />
           <Route path="/resume" 
           render = { () => 
             <Scripts url="resume" 
-                checkScrollPosition={this.checkScrollPosition} 
                 checkHeights = {this.checkHeights} /> 
               } 
           />
           <Route path="/aboutMe" 
           render = { () => 
             <Scripts url="aboutMe" 
-                checkScrollPosition={this.checkScrollPosition} 
                 checkHeights = {this.checkHeights} /> 
               } 
           />
           <Route path="/contact" 
           render = { () => 
             <Scripts url="contact" 
-                checkScrollPosition={this.checkScrollPosition} 
                 checkHeights = {this.checkHeights} /> 
               } 
           />

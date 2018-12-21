@@ -5,7 +5,6 @@ import javascriptLogo from '../images/javascript_logo.png';
 import pythonLogo from '../images/python_logo.png';
 import djangoLogo from '../images/django_logo.png';
 import reactLogo from '../images/react_logo.png';
-import divider from '../images/divider.png';
 
 
 const Projects = (props) => (
@@ -17,15 +16,17 @@ const Projects = (props) => (
 		</h1>
 		<h2 className='languages-list'>
 			<LanguageCard name="python" languageImage={pythonLogo} />
-			<img src={divider} height="20px" alt="divider image" />
+			<div className="divider"></div>
 			<LanguageCard name="django" languageImage={djangoLogo} />
-			<img src={divider} height="20px" alt="divider image" />
+			<div className="divider"></div>
 			<LanguageCard name="javascript" languageImage={javascriptLogo} />
-			<img src={divider} height="20px" alt="divider image" />
+			<div className="divider"></div>
 			<LanguageCard name="reactJS" languageImage={reactLogo} />
 		</h2>
 		<div className='text-paragraphs'>
-			<p>I am a financial analyst, a web developer, and a project manager. I can think strategically, while at the same time, implement complicated technical requirements. My diverse skill set allows me to bridge the gap between business requirements and technological solutions.   </p>
+			<p>My name is Leandro Inumerable - a financial analyst, web developer, and project manager. I take pride in being a "jack-of-all-trades." 
+				I can design big-picture strategies while at the same time, address the lowest level technical specifications. This skill set allows me to easily bridge the gap between business requirements and technological solutions.   </p>
+			<p>I am looking to expand my skills as a developer. I am adept at python and javascript, and use django and react as my main frameworks when building web applications. I have also done workflow projects with PHP and data analysis with R. I am a very flexible developer who can quicly learn new languages and skills. </p>
 			<p>Feel free to browse this site to know more about my projects, works, and passions. </p>
 		</div>
 	</div>

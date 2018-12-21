@@ -46,14 +46,12 @@ h3 {
 
 p{
   text-indent: 1.5em;
+  font-size: 1.2em;
   margin: 0.5em 0; 
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-align: justify;
 }
 
-img{
-  margin:15px 40px;
-}
 
 /* ===================================== 
    Grid Layout
@@ -171,7 +169,7 @@ img{
 .background{
   z-index: -2;
   position: absolute;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/_1190570.jpg);
   background-size: cover;
   background-attachment: fixed;
   min-height: 100%;
@@ -341,7 +339,131 @@ img{
   align-items: center;
 }
 
+.divider {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  margin:15px 40px;
+}
+
+.year-block{
+  display: inline-block;
+  background-color: #00cdcd;
+  box-shadow: 6px 6px 5px #d4d4d4;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.5em 1em;
+  margin:1em auto 1em 25%;
+  transform: translateX(-19px);
+}
+
+
+.resume-section {
+  position:relative;
+  height: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 75px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-gap: 0;
+  grid-template-areas: 
+    "skills logo header"
+    "skills timeline main"
+}
+
+
+.work-icon {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: #00cdcd;
+  min-width: 75px;
+  height: 75px;
+  border: solid #00cdcd 4px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 5px #d4d4d4;
+}
+
+.resume-line {
+  grid-area: timeline;
+  box-sizing: border-box;
+  height: 100%;
+  width: 1px;
+  border: solid #888 1px;
+  margin: 0 auto;
+}
+
+
+.icon-line{
+  grid-area: line;
+  height: 1px;
+  margin: auto;
+  width: 80%;
+  border: solid #888 1px;
+}
+
+.resume-description{
+  grid-area: header;
+  height: calc(100% - 2em);
+  align-self: center;
+  margin: 0 2em;
+  background-color: #00cdcd;
+  color: white;
+  box-shadow: 6px 6px 5px #d4d4d4;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.5em 1em;
+}
+
+.resume-content{
+  height: calc(100% - 2em);
+  grid-area: main;
+  align-self: center;
+  margin: 0 2em;
+  background-color: white;
+  color: #222;
+  box-shadow: 6px 6px 5px #d4d4d4;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.5em 1em;
+}
+
+.resume-skills{
+  height: calc(100% - 2em);
+  grid-area: skills;
+  align-self: center;
+  margin: 0 2em;
+  background-color: white;
+  color: #222;
+  box-shadow: 6px 6px 5px #d4d4d4;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.5em 1em;
+}
+
+.profile-picture{
+  width: 30vw;
+  height: 30vw;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid #ccc 10px;
+}
+
+.head-shot{
+  height: 30vw;
+}
+
+
 @media (max-width: 768px) {
+
+  p{
+    font-size: 18px;
+  }
 
   .main-container {
     grid-template-rows: minmax(60px, auto) 1fr;
@@ -363,7 +485,7 @@ img{
     width: 100vw;
     height: 100vh;
     z-index: -10;
-    background: url(../images/background-mobile.jpg) no-repeat center;
+    background: url(../images/background2.jpg) no-repeat center;
     background-size: cover;
   }
 
@@ -436,15 +558,14 @@ img{
     background-color: transparent;
   }
 
-  .introduction{
-    padding: 1em;
-  }
-
   .languages-list {
     flex-direction: column;
   }
 
-
+  .divider {
+    margin:40px;
+  }
 
 
 }
+

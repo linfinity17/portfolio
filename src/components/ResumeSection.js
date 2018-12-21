@@ -1,0 +1,15 @@
+import React from 'react';
+
+const ResumeSection = (props) => (
+	<div className="resume-section">
+		<div className="work-icon">
+				<img height="45px" src={props.icon} />
+		</div>
+		<div className="resume-line"></div>
+		<div className="resume-description"> {props.description} </div>
+		<div className="resume-content"> </div>
+		<div className="resume-skills"> </div>
+	</div>
+);
+
+export default ResumeSection;
