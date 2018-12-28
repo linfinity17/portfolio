@@ -1,11 +1,13 @@
 import React from 'react';
 import LanguageCard from './LanguageCard';
+import ProjectCard from './ProjectCard';
 
 import javascriptLogo from '../images/javascript_logo.png';
 import pythonLogo from '../images/python_logo.png';
 import djangoLogo from '../images/django_logo.png';
 import reactLogo from '../images/react_logo.png';
 
+import pfdScreen from '../images/pfd_screen.PNG';
 
 const Projects = (props) => (
 <div className='projects'>
@@ -15,13 +17,13 @@ const Projects = (props) => (
 		Introduction
 		</h1>
 		<h2 className='languages-list'>
-			<LanguageCard name="python" languageImage={pythonLogo} />
+			<LanguageCard name="python" languageImage={pythonLogo} url='https://www.python.org/' />
 			<div className="divider"></div>
-			<LanguageCard name="django" languageImage={djangoLogo} />
+			<LanguageCard name="django" languageImage={djangoLogo} url='https://www.djangoproject.com/' />
 			<div className="divider"></div>
-			<LanguageCard name="javascript" languageImage={javascriptLogo} />
+			<LanguageCard name="javascript" languageImage={javascriptLogo} url='https://www.javascript.com/' />
 			<div className="divider"></div>
-			<LanguageCard name="reactJS" languageImage={reactLogo} />
+			<LanguageCard name="reactJS" languageImage={reactLogo} url='https://reactjs.org/' />
 		</h2>
 		<div className='text-paragraphs'>
 			<p>My name is Leandro Inumerable - a financial analyst, web developer, and project manager. I take pride in being a "jack-of-all-trades." 
@@ -34,9 +36,23 @@ const Projects = (props) => (
 		<h1 className='works-title'>
 		Projects
 		</h1>
-		<div className='text-paragraphs'>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, est sed bibendum sodales, ligula dui rutrum ligula, vel porta sem lacus et arcu. Proin placerat tortor quis porta vehicula. Sed tempor dolor turpis, a imperdiet tortor lacinia nec. Aliquam erat volutpat. Nullam lobortis, tortor sollicitudin rhoncus feugiat, ante orci accumsan purus, in condimentum lorem nibh sed leo. Nullam vitae facilisis magna, eu dapibus massa. Maecenas congue at neque non interdum. Nullam cursus, odio vitae tempus interdum, nunc tortor pretium lacus, eu elementum erat mi vitae libero. </p>
-			<p>Vivamus ac urna eget nibh sollicitudin egestas in ac enim. Nunc accumsan luctus lacinia. Mauris pretium eleifend ipsum sodales dapibus. In congue tortor vel efficitur dictum. Etiam ornare, turpis a ultricies congue, leo nisi sagittis purus, sed tempus orci augue ut elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dignissim nisl. Aenean dui sem, tincidunt a metus at, interdum hendrerit velit.</p>
+		<div className="project-list">
+			<ProjectCard 
+			screen={pfdScreen} 
+			title="Philippine Financial Data" 
+			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
+			<ProjectCard 
+			screen={pfdScreen} 
+			title="Time and Motion Tracker" 
+			description="This tracker is a progressive-web-app built on Django. I built it so I can collect motion data from our staff. Our employees log the task they are doing and the app times how long it takes them to finish. With this data, I can do an analysis on their day-to-day tasks and identify pain-points, areas of wastage, and areas of improvement. This app is an offline-ready app because most of our employees do not have internet when going out on fieldwork." />
+			<ProjectCard 
+			screen={pfdScreen} 
+			title="Philippine Financial Data" 
+			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
+			<ProjectCard 
+			screen={pfdScreen} 
+			title="Philippine Financial Data" 
+			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
 		</div>
 	</div>
 </div>

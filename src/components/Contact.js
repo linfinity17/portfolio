@@ -19,9 +19,15 @@ const Contact = (props) => (
 
 		</div>
 		<div className='social-media'>
-			<a target="_blank" href='https://www.instagram.com/leandro.inumerable/'> <img className='social-media-logo' src= {instagramLogo} /> </a>
-			<a target="_blank" href='https://github.com/linfinity17/'> <img className='social-media-logo' src= {gitHubLogo} /> </a>
-			<a target="_blank" href='https://www.linkedin.com/in/leandro-inumerable/'> <img className='social-media-logo' src= {linkedInLogo} /> </a>
+			<a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/leandro.inumerable/'> 
+				<img className='social-media-logo' src= {instagramLogo} alt="instagram link"/> 
+			</a>
+			<a target="_blank" rel="noopener noreferrer" href='https://github.com/linfinity17/'> 
+				<img className='social-media-logo' src= {gitHubLogo} alt="github link"/> 
+			</a>
+			<a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/leandro-inumerable/'> 
+				<img className='social-media-logo' src= {linkedInLogo} alt="linkedin link"/> 
+			</a>
 		</div>
 </div>
 );

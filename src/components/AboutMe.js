@@ -8,7 +8,7 @@ const AboutMe = (props) => (
 		</h1>
 		<div className='section-aboutMe'>
 			<div className='profile-picture'> 
-				<img className='head-shot' src={profilePicture} />
+				<img className='head-shot' src={profilePicture} alt="profile"/>
 			</div>
 
 			<div className='text-paragraphs'>

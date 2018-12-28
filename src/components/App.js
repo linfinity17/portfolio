@@ -10,7 +10,6 @@ import FadeIn from 'react-fade-in';
 import Header from './Header';
 import Content from './Content';
 import Scripts from './Scripts';
-import NotFound from './NotFound';
 import Burger from './Burger';
 
 
@@ -42,13 +41,13 @@ class App extends React.Component {
       let sectionArray = ['head','banner','projects','resume','aboutMe','contact'];
       let isAtTop = this.state.isAtTop;
 
-      if (posY == 0) {
+      if (posY === 0) {
         this.setState({
           isAtTop:true
         });
       }
 
-      if (posY != 0 && isAtTop) {
+      if (posY !== 0 && isAtTop) {
         console.log('hello');
         this.setState({
           isAtTop:false
@@ -56,18 +55,18 @@ class App extends React.Component {
       }
 
       sectionArray.forEach((item) => {
-        if (positions[item] > posY && posY > (positions[item] - 200) && item != 'head') {
+        if (positions[item] > posY && posY > (positions[item] - 200) && item !== 'head') {
             document.querySelector('#'+item).parentElement.className = 'isActive';
             sectionArray.forEach((removeClassItem) => {
               if (!['head','banner',item].includes(removeClassItem)) {
                 document.querySelector('#'+removeClassItem).parentElement.className = '';
               }
             });
-          if (item =="banner" || item =="head") {
+          if (item ==="banner" || item ==="head") {
             document.querySelector('#'+item).parentElement.className = '';
             item = "";
           }
-          if (this.props.history.location.pathname != ('/' + item)) {
+          if (this.props.history.location.pathname !== ('/' + item)) {
             this.props.history.push('/' + item);
           }
         }

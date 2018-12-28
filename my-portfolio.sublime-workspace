@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"row",
+				"row-reverse\tflex-direction"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"pfd",
+				"pfdScreen"
+			],
+			[
+				"Proj",
+				"ProjectCard"
+			],
+			[
+				"Content",
+				"ContentCFA"
+			],
+			[
 				"tran",
 				"translateY()\ttransform"
 			],
@@ -14,10 +38,6 @@
 			[
 				"tra",
 				"translateY()\ttransform"
-			],
-			[
-				"alig",
-				"align-self\tproperty"
 			],
 			[
 				"marg",
@@ -46,10 +66,6 @@
 			[
 				"bot",
 				"bottomPosition"
-			],
-			[
-				"font",
-				"font-size\tproperty"
 			],
 			[
 				"trans",
@@ -444,14 +460,22 @@
 	],
 	"file_history":
 	[
-		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/App.js",
-		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Content.js",
-		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/AboutMe.js",
-		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Projects.js",
-		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Contact.js",
-		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Resume.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/ProjectCard.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/css/index.css",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Projects.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/resumeData.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/LanguageCard.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Resume.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/resumeData/ContentSBC.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/resumeData/ContentSEC.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/resumeData/ContentDOF.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/resumeData/ContentCFA.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/ResumeSection.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/ResumeData.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/App.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/AboutMe.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Contact.js",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Content.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Scripts.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Banner.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Header.js",
@@ -563,19 +587,11 @@
 		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/static/js/test.js",
 		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/views.py",
 		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/static/js/serviceworker.js",
-		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/templates/time_keeper/post_data.html",
-		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/static/js/idbop.js",
-		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/templates/time_keeper/base.html",
-		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/templates/time_keeper/success.html",
-		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/tests.py",
-		"/C/Users/Leandro Inumerable/Desktop/manifest.json",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/static/js/idbop.js",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/static/js/test.js",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/templates/time_keeper/post_data.html"
+		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/templates/time_keeper/post_data.html"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -590,6 +606,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"box-s",
+			"#00cdcd",
+			"resume",
+			"a {",
+			"A ",
+			"/*",
 			".profi",
 			"overfl",
 			"profi",
@@ -644,6 +666,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"orange"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -661,7 +684,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -698,7 +721,7 @@
 	"project": "my-portfolio.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -712,12 +735,12 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
