@@ -5,7 +5,12 @@ import { ContentAteneo,
 		ContentDOF,
 		ContentSEC,
 		ContentCFA,
-		ContentSBC } from './resumeData.js';
+		ContentSBC,
+		SkillsAteneo,
+		SkillsDOF,
+		SkillsCFA,
+		SkillsSEC,
+		SkillsSBC } from './resumeData.js';
 
 import graduation from '../images/graduation_logo.png';
 import government from '../images/government_logo.png';
@@ -23,29 +28,34 @@ const Resume = (props) => (
 		<ResumeSection 
 			icon={graduation} 
 			description="B.S. Management (Honors) from Ateneo de Manila"
+			skills={<SkillsAteneo />}
 			content={<ContentAteneo />}
 		/>
 
 		<ResumeSection 
 			icon={government} 
 			description="Department of Finance, Republic of the Philippines" 
+			skills={<SkillsDOF />}
 			content={<ContentDOF />}	
 		/>
 		<div className="year-block"> 2015 </div>
 		<ResumeSection 
 			icon={market} 
 			description="Securities and Exchange Commission, Republic of the Philippines" 
+			skills={<SkillsSEC />}
 			content={<ContentSEC />}	
 		/>
 		<div className="year-block"> 2016 </div>
 		<ResumeSection 
 			icon={finance} 
 			description="Earned my CFA Charter" 
+			skills={<SkillsCFA />}
 			content={<ContentCFA />}	
 		/>
 		<ResumeSection 
 			icon={banking} 
 			description="Security Bank Corporation" 
+			skills={<SkillsSBC />}
 			content={<ContentSBC />}	
 		/>
 </div>

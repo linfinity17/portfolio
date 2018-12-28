@@ -9,10 +9,14 @@ import reactLogo from '../images/react_logo.png';
 
 import pfdLogo from '../images/pfd_logo.JPG';
 import timeLogo from '../images/time_logo.png';
-import kbLogo from '../images/kb_logo.png';
+import profileLogo from '../images/profile_logo.png';
+import dashboardLogo from '../images/dashboard_logo.png';
+import workflowLogo from '../images/workflow_logo.png';
 
 import { ContentPFD,
 		ContentPortfolio,
+		ContentDashboard,
+		ContentProcessMaker,
 		ContentTimeAndMotion } from './projectData.js';
 
 const Projects = (props) => (
@@ -46,33 +50,28 @@ const Projects = (props) => (
 			<ProjectCard 
 			screen={pfdLogo} 
 			title="Philippine Financial Data"
-			link="/equities" 
 			description= {<ContentPFD />}
 			/>
 			<ProjectCard 
 			screen={timeLogo} 
 			title="Time and Motion Tracker" 
-			link="https://timeandmotion.pythonanywhere.com"
 			description= {<ContentTimeAndMotion />}
 			/>
 			<ProjectCard 
-			screen={kbLogo} 
-			title="Knowledge Base" 
-			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
-			<ProjectCard 
-			screen={pfdLogo} 
+			screen={profileLogo} 
 			title="Portfolio Website" 
-			link="/"
 			description= {<ContentPortfolio />}
 			/>
 			<ProjectCard 
-			screen={pfdLogo} 
+			screen={dashboardLogo} 
 			title="Python Data Dashboard" 
-			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
+			description= {<ContentDashboard />}
+			/>
 			<ProjectCard 
-			screen={pfdLogo} 
+			screen={workflowLogo} 
 			title="Loan Origination Workflows (ProcessMaker)" 
-			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
+			description= {<ContentProcessMaker />}
+			/>
 		</div>
 	</div>
 </div>

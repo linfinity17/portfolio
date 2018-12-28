@@ -8,7 +8,7 @@ const ResumeSection = (props) => (
 		<div className="resume-line"></div>
 		<div className="resume-description"> {props.description} </div>
 		<div className="resume-content"> {props.content} </div>
-		<div className="resume-skills"> <p>Lorem ipsum dolor sit amet, consectetur adipiscing  rhoncus feugiat, ante orci accumsan purus, in condimentum lorem nibh sed libero. </p> </div>
+		<div className="resume-skills"> {props.skills} </div>
 	</div>
 );
 

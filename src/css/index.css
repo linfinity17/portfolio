@@ -261,6 +261,10 @@ ul li {
   color:#00cdcd;
 }
 
+.works li {
+  list-style: circle inside;
+}
+
 .project-list {
   width: 100%;
   display: flex;
@@ -272,6 +276,8 @@ ul li {
 .project-card {
   display: flex;
   width: 90%;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: #222;
   border-radius: 10px;
@@ -320,12 +326,12 @@ ul li {
   max-width: 1200px;
 }
 
-.text-paragraphs a, .resume-content a {
+.text-paragraphs a, .resume-content a, .resume-skills a {
   display: inline;
   color: #00cdcd;
 }
 
-.resume-content li {
+.resume-content li, .resume-skills li {
   margin-bottom: 20px;
 }
 
@@ -532,10 +538,18 @@ ul li {
   letter-spacing:   0px;
 }
 
+.section-aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .profile-picture{
   width: 30vw;
   height: 30vw;
   overflow: hidden;
+  margin: 0 2em 2em 2em;
   border-radius: 50%;
   border: solid #ccc 10px;
 }
@@ -676,10 +690,13 @@ ul li {
     font-size: 18px;
   }
 
+  .section-aboutMe {
+    flex-direction: column;
+  }
+
   .profile-picture{
     width: 50vw;
     height: 50vw;
-    margin: auto;
   }
 
   .head-shot{
