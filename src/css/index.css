@@ -252,6 +252,15 @@ ul li {
   position: relative;
 }
 
+.works a{
+  color:black;
+  cursor: pointer;
+}
+
+.works a:hover{
+  color:#00cdcd;
+}
+
 .project-list {
   width: 100%;
   display: flex;
@@ -269,7 +278,6 @@ ul li {
   box-shadow: 6px 6px 5px #d4d4d4;
   font-weight: bold;
   letter-spacing: 2px;
-  padding: 0.5em 1em;
   margin-bottom: 0.5em;
 }
 
@@ -278,9 +286,11 @@ ul li {
 }
 
 .project-img {
-  height: 200px;
-  width: 250px;
-  margin: 2em;
+  height: 300px;
+}
+
+.project-info {
+  margin: 0 1em;
 }
 
 .project-info p {
@@ -709,6 +719,23 @@ ul li {
   .divider {
     margin:40px;
   }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card:nth-of-type(even) {
+    flex-direction: column;
+  }
+
+  .project-img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
 
 
 }

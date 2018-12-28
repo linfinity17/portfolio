@@ -7,7 +7,13 @@ import pythonLogo from '../images/python_logo.png';
 import djangoLogo from '../images/django_logo.png';
 import reactLogo from '../images/react_logo.png';
 
-import pfdScreen from '../images/pfd_screen.PNG';
+import pfdLogo from '../images/pfd_logo.JPG';
+import timeLogo from '../images/time_logo.png';
+import kbLogo from '../images/kb_logo.png';
+
+import { ContentPFD,
+		ContentPortfolio,
+		ContentTimeAndMotion } from './projectData.js';
 
 const Projects = (props) => (
 <div className='projects'>
@@ -38,20 +44,34 @@ const Projects = (props) => (
 		</h1>
 		<div className="project-list">
 			<ProjectCard 
-			screen={pfdScreen} 
-			title="Philippine Financial Data" 
-			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
+			screen={pfdLogo} 
+			title="Philippine Financial Data"
+			link="/equities" 
+			description= {<ContentPFD />}
+			/>
 			<ProjectCard 
-			screen={pfdScreen} 
+			screen={timeLogo} 
 			title="Time and Motion Tracker" 
-			description="This tracker is a progressive-web-app built on Django. I built it so I can collect motion data from our staff. Our employees log the task they are doing and the app times how long it takes them to finish. With this data, I can do an analysis on their day-to-day tasks and identify pain-points, areas of wastage, and areas of improvement. This app is an offline-ready app because most of our employees do not have internet when going out on fieldwork." />
+			link="https://timeandmotion.pythonanywhere.com"
+			description= {<ContentTimeAndMotion />}
+			/>
 			<ProjectCard 
-			screen={pfdScreen} 
-			title="Philippine Financial Data" 
+			screen={kbLogo} 
+			title="Knowledge Base" 
 			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
 			<ProjectCard 
-			screen={pfdScreen} 
-			title="Philippine Financial Data" 
+			screen={pfdLogo} 
+			title="Portfolio Website" 
+			link="/"
+			description= {<ContentPortfolio />}
+			/>
+			<ProjectCard 
+			screen={pfdLogo} 
+			title="Python Data Dashboard" 
+			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
+			<ProjectCard 
+			screen={pfdLogo} 
+			title="Loan Origination Workflows (ProcessMaker)" 
 			description="Philippine Financial Data is my first website built using Django. It is a data-aggregator site that scrapes Philippine stock data from public sources and provides tools for analysis. The data updates automatically at the end of each day." />
 		</div>
 	</div>
