@@ -122,6 +122,8 @@ class App extends React.Component {
     });
 
     this.checkHeights();
+    setTimeout(() => { this.checkHeights() }, 3000);
+    document.title = "Leandro's Portfolio";
   };
 
 

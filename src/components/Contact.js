@@ -3,6 +3,7 @@ import React from 'react';
 import linkedInLogo from '../images/linkedin_logo.png';
 import gitHubLogo from '../images/github_logo.png';
 import instagramLogo from '../images/instagram_logo.png';
+import treehouseLogo from '../images/treehouse_logo.png';
 
 const Contact = (props) => (
 <div className='contact'>
@@ -24,6 +25,9 @@ const Contact = (props) => (
 			</a>
 			<a target="_blank" rel="noopener noreferrer" href='https://github.com/linfinity17/'> 
 				<img className='social-media-logo' src= {gitHubLogo} alt="github link"/> 
+			</a>
+			<a target="_blank" rel="noopener noreferrer" href='https://teamtreehouse.com/linumerable'> 
+				<img className='social-media-logo' src= {treehouseLogo} alt="treehouse link"/> 
 			</a>
 			<a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/leandro-inumerable/'> 
 				<img className='social-media-logo' src= {linkedInLogo} alt="linkedin link"/> 

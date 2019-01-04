@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"ch",
+				"checkHeights"
+			],
+			[
 				"time",
 				"timeLogo"
 			],
@@ -66,10 +70,6 @@
 			[
 				"min",
 				"min-height\tproperty"
-			],
-			[
-				"ch",
-				"checkURLName"
 			],
 			[
 				"pos",
@@ -415,7 +415,9 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Contact.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/css/index.css",
+		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/App.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/projectData.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/ProjectCard.js",
 		"/C/Users/Leandro Inumerable/Desktop/personal/portfolio/src/components/Projects.js",
@@ -540,13 +542,11 @@
 		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/templates/time_keeper/success.html",
 		"/C/Users/Leandro Inumerable/Desktop/Python/time_keeper/time_keeper/tests.py",
 		"/C/Users/Leandro Inumerable/Desktop/manifest.json",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/static/js/idbop.js",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/static/js/test.js",
-		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/templates/time_keeper/post_data.html"
+		"/C/Users/Leandro Inumerable/Desktop/web_app_test/time_record/time_keeper/static/js/idbop.js"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -560,6 +560,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"project-card",
+			"project-im",
 			"pfdScreen",
 			"pfdScre",
 			"project-in",
@@ -605,7 +607,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -642,7 +644,7 @@
 	"project": "my-portfolio.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
