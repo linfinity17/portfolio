@@ -47,21 +47,20 @@ const Projects = (props) => (
 		Projects
 		</h1>
 		<div className="project-list">
-			<ProjectCard 
-			screen={pfdLogo} 
-			title="Philippine Financial Data"
-			description= {<ContentPFD />}
-			/>
-			<ProjectCard 
-			screen={timeLogo} 
-			title="Time and Motion Tracker" 
-			description= {<ContentTimeAndMotion />}
-			/>
-			<ProjectCard 
-			screen={profileLogo} 
-			title="Portfolio Website" 
-			description= {<ContentPortfolio />}
-			/>
+			<a target="_blank" rel="noopener noreferrer" href="/equities"> 
+				<ProjectCard 
+				screen={pfdLogo} 
+				title="Philippine Financial Data"
+				description= {<ContentPFD />}
+				/>
+			</a>
+			<a target="_blank" rel="noopener noreferrer" href="https://github.com/linfinity17/portfolio"> 
+				<ProjectCard 
+				screen={profileLogo} 
+				title="Portfolio Website" 
+				description= {<ContentPortfolio />}
+				/>
+			</a>
 			<ProjectCard 
 			screen={dashboardLogo} 
 			title="Python Data Dashboard" 

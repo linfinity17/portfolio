@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContentAteneo = (props) => (
 	<ul>
-		<li>The Management (Honors) program is the most distinghished program of the Ateneo School of Management. The program covers each facet of management, with a heavy focus on entrepreneurship. Only around 10 people usually graduate from this program, starting from about 80 people. </li>
+		<li>The Management (Honors) program is the most distinguished program of the Ateneo School of Management. The program covers each facet of management, with a heavy focus on entrepreneurship. Only around 10 people usually graduate from this program, starting from about 80 people. </li>
 		<li>At the same time, my chosen courses had a heavy focus on finance - tackling all foundational areas such as financial reporting, valuation of companies, projects, and financial instruments, corporate finance, portfolio management, and economics. </li>
 		<li>My culmination project was the creation and management of a small business - Dajun Artisan Granola. As a team of six students, we handled operations, marketing, sales, and finance for a home-grown business that sold healthy snacks. I acted as operations manager, ensuring that production was efficient and I kept meticulous records of ingredients and costing. </li>
 	</ul>
@@ -44,7 +44,7 @@ const SkillsDOF = (props) => (
 
 const ContentSEC = (props) => (
 	<div>
-	<h3>Financial Analyst</h3>
+	<h3>Advisor to the Commissioner</h3>
 	<ul>
 		<li>Lead research analyst for capital market development initiatives. Projects focused on improving liquidity and transparency to improve the efficiency of trading and capital-raising in the Philippine capital markets. </li>
 		<li>Prepared macroeconomic reports to assist the commission on policy direction for the financial markets and prepared presentations to be used by the commission in economic briefings.</li>
@@ -64,7 +64,7 @@ const SkillsSEC = (props) => (
 	<div>
 	<h4>Highlights:</h4>
 	<ul>
-		<li>Took the first steps to instituionalizing market reform. We pushed to create market benchmark tools to facilitate efficient trading in the Philippine market. We pushed for more financing options to facilitate massive infrastructure projects. And we defended market transparency by scrutinizing a badly done merger deal by the two exchanges in the Philippines - the Philippine Stock Exchange and the Philippine Dealing and Exchange Corp. </li>
+		<li>Took the first steps to institutionalizing market reform. We pushed to create market benchmark tools to facilitate efficient trading in the Philippine market. We pushed for more financing options to facilitate massive infrastructure projects. And we defended market transparency by scrutinizing a badly done merger deal by the two exchanges in the Philippines - the Philippine Stock Exchange and the Philippine Dealing and Exchange Corp. </li>
 	</ul>
 	</div>
 );

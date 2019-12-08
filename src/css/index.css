@@ -594,6 +594,7 @@ ul li {
     position: fixed;
     width: 100vw;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     z-index: -10;
     background: url(../images/background2.jpg) no-repeat center;
     background-size: cover;

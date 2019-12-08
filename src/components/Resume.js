@@ -48,7 +48,7 @@ const Resume = (props) => (
 		<div className="year-block"> 2016 </div>
 		<ResumeSection 
 			icon={finance} 
-			description="Earned my CFA Charter" 
+			description="Finished all three levels of the CFA Exams" 
 			skills={<SkillsCFA />}
 			content={<ContentCFA />}	
 		/>
